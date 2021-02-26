@@ -18,18 +18,4 @@ end
 mint = Ingredient.create!(name: "mint")
 puts "#{mint.name} created!"
 
-
-# créer des cocktails
-puts "creating cocktails"
-mojito = Cocktail.create(name: "Mojito")
-pina_colada = Cocktail.create(name: "Pina Colada")
-margarita = Cocktail.create(name: "Margarita")
-sex_on_the_beach = Cocktail.create(name: "Sex on the beach")
-blue_lagoon = Cocktail.create(name: "Blue Lagoon")
-cosmopolitan = Cocktail.create(name: "Cosmopolitan")
-
-[mojito, pina_colada, margarita, sex_on_the_beach, blue_lagoon, cosmopolitan].each do |cocktail|
-  puts "#{cocktail.name} created !"
-end
-
 puts "Finished!"

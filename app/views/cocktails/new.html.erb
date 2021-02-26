@@ -3,6 +3,7 @@
 Chose a fancy name for your coktail:
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit "Add my coktail!", class: "btn btn-primary" %>
 <% end %>
 
