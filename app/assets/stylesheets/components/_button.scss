@@ -1,12 +1,27 @@
-.btn-blank {
-  color: white;
+.btn-rounded-corners {
   border-style: solid;
-  border-color: white;
   padding: 8px 16px;
   border-radius: 32px;
+  margin: 16px 0;
+}
+
+.btn-blank {
+  color: white;  
+  border-color: white;
+  
 }
 
 .btn-blank:hover {
   color: rgb(214, 213, 213);
   border-color: rgb(214, 213, 213);
+}
+
+.btn-orange {
+  color: $orange;
+  border-color: $orange;
+}
+
+.btn-orange:hover{
+  color: #c74d07;
+  border-color: #c74d07;  
 }

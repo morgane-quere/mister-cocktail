@@ -3,18 +3,18 @@
     <h1>Cocktail Manager</h1>
     <h2><i class="fas fa-cocktail"></i></h2>
     <p>For finest mixologists</p>
-    <a class="btn btn-blank" href="#cocktails-list">Choose a cocktail</a>
+    <a class="btn btn-rounded-corners btn-blank" href="#cocktails-list">Choose a cocktail</a>
   </div>  
 </div>
 
-<div class="container">
+<div class="container text-center">
   <h2>Chose your cocktail</h2>
+  <%= link_to "New cocktail", new_cocktail_path, { class: "btn btn-rounded-corners btn-orange" } %>
   <ul id="cocktails-list">
     <% @cocktails.each do |cocktail| %>
       <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
     <% end %>
-  </ul>
-  <%= link_to "New cocktail", new_cocktail_path %>
+  </ul>  
 </div>
 
 
