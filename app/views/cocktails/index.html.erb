@@ -1,9 +1,20 @@
-<h1>Chose your cocktail</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://assets.afcdn.com/album/D20170915/phalbm25238705_w980h638c1.jpg);">
+  <div class="container" id="banner-container">   
+    <h1>Cocktail Manager</h1>
+    <h2><i class="fas fa-cocktail"></i></h2>
+    <p>For finest mixologists</p>
+    <a class="btn btn-blank" href="#cocktails-list">Choose a cocktail</a>
+  </div>  
+</div>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h2>Chose your cocktail</h2>
+  <ul id="cocktails-list">
+    <% @cocktails.each do |cocktail| %>
+      <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <% end %>
+  </ul>
+  <%= link_to "New cocktail", new_cocktail_path %>
+</div>
 
-<%= link_to "New cocktail", new_cocktail_path %>
+
